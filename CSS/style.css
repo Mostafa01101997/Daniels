@@ -1,0 +1,339 @@
+:root{
+  --color-text:#3f4343;
+  --color-bg-secondary:#f7f7f7;
+  --color-bg-form:#f4f4f4;
+}
+body{
+ 
+  font-family:"Poppins", sans-serif;
+  color: var(--color-text);
+ 
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:"Montserrat", sans-serif;
+  color: black;
+  
+}
+.p-color{
+  color: #748182;
+}
+.bg-gray{
+  background-color: var(--color-bg-secondary);
+}
+/* ==============================>Start Navbar style <=========================== */
+.navbar-nav a{
+  position: relative;
+}
+.navbar-nav a::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  transition: all 500ms;
+}
+.navbar-nav a.active::after{
+  width: 80%;
+}
+/* ==============================>End Navbar style <=========================== */
+
+/* ==============================>Sart Header style <=========================== */
+.home{
+  background-image: linear-gradient(#000a,#000a),url(../image/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home .social-media li a{
+  width:2.2rem;
+  height: 2.2rem;
+  background: rgba(0, 0, 0, 0.3);;
+  border: 0.125rem solid #999 none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.caption h1{
+  font-weight: 200;
+}
+.home  .social-media li i{
+  color: #fff;
+}
+.home .caption span::after{
+  content: "";
+  font-size: 4.1rem;
+  /* border-right: 2PX solid #fff; */
+  animation-name:textAnemy ;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes textAnemy{
+  0%,30.46%,61.91%,96.138%{content: "|";}
+  1.6%,28.86%{content: "D |";}
+  3.26%,27.26%{content: "DE |";}
+  4.86%,25.66%{content: "DEV |";}
+  6.46%,24.065%{content: "DEVE |";}
+  8.06%,22.46%{content: "DEVEL |";}
+  9.66%,20.86%{content: "DEVELO |";}
+  11.26%,19.26%{content: "DEVELOP |";}
+  12.86%,17.66%{content: "DEVELOPE |";}
+  14.46%,16.06%{content: "DEVELOPER |";}
+  32.31%,60.06%{content: "D |";}
+  34.16%,58.21%{content: "DE |";}
+  36.01%,56.36%{content: "DES |";}
+  37.86%,54.51%{content: "DESI |";}
+  39.71%,52.66%{content: "DESIG |";}
+  41.56%,50.81%{content: "DESIGN |";}
+  43.41%,48.96%{content: "DESIGNE |";}
+  45.26%,47.11%{content: "DESIGNER |";}
+  63.09%,94.958%{content: "L |";}
+  64.27%,93.77%{content: "LA |";}
+  65.45%,92.59%{content: "LAR |";}
+  66.63%,91.41%{content: "LARR |";}
+  67.81%,90.23%{content: "LARRY |";}
+  68.99%,89.05%{content: "LARRY |";}
+  70.17%,87.87%{content: "LARRY D |";}
+  71.35%,86.69%{content: "LARRY DA |";}
+  72.53%,85.51%{content: "LARRY DAN |";}
+  73.71%,84.33%{content: "LARRY DANI |";}
+  74.89%,83.15%{content: "LARRY DANIE |";}
+  76.07%,8197%{content: "LARRY DANIEL |";}
+  77.25%,80.79%{content: "LARRY DANIELE |";}
+  78.43%,79.61%{content: "LARRY DANIELES |";}
+
+}
+/* ==============================>End Header style <=========================== */
+/* ==============================>Sart About style <=========================== */
+
+.hero-img::after{
+  content: "";
+  background-image: url(../image/dots.png);
+  background-repeat: repeat;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.hero .hero-content .sub-title{
+
+  color: #999;
+}
+
+.progress, .progress-stacked {
+  --bs-progress-height: 1.5rem;
+}
+.progress .progress-bar span{
+  left: 10px;
+}
+.progress .progress-bar span::after{
+  content: attr(data-value);
+  position: absolute;
+  top: 0px; 
+  right: 15px;
+}
+.download-btn:hover{
+  color: var(--color-text);
+  background-color: #fff;
+  border-color: var(--color-text);
+}
+/* ==============================>End About style <=========================== */
+/* ==============================>Sart Services style <=========================== */
+.section-tittle .tittle-head::after{
+  content: "";
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  left: 3px;
+  top: 20px;
+  background-image: url(../image/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+  
+}
+.icon{
+  width:5rem;
+  height: 5rem;
+  transition: all 2s;
+
+}
+.inner-services:hover .icon{
+  background-color:var(--color-text);
+  color: var(--color-bg-secondary);
+}
+/* ==============================>End Services style <=========================== */
+/* ==============================>Start Protfolio style <=========================== */
+.nav-pills .nav-link{
+  position: relative;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.25rem;
+  cursor:pointer;
+
+}
+.nav-pills .nav-link::after{
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 2px;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  transition: width 1s;
+
+
+}
+.nav-pills .nav-link.active{
+  background:#fff;
+  color:black;
+}
+.nav-pills .nav-link.active::after{
+width: 70%;
+}
+.item-portfolio:hover .portfolio-overlay{
+  opacity: 1;
+}
+.portfolio-overlay{
+  position: absolute;
+  top:4px;
+  left: 4px;
+  bottom: 2px;
+  right: 2px;
+  width: 98%;
+  height: 97%;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.overlay-item{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%,-50%);
+  z-index: 999;
+}
+.port-icons{
+  width: 20%;
+}
+.icon-port{
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: var(--color-text);
+  color: var(--color-bg-secondary);
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.icon-port:hover{
+  color: black;
+  background-color:var(--color-bg-secondary);
+}
+/* ==============================>End Protfolio style <=========================== */
+
+/* ==============================>Start Testimonials style <=========================== */
+
+.carousel-item .item-img{
+  width: 6.25rem ;
+}
+.carousel-item .item-parg{
+  max-width: 70%;
+  word-spacing: .125rem;
+}
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: .625rem;
+  height: .625rem;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: var(--color-text);
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 50%;
+ 
+}
+/* ==============================>End Testimonials style <=========================== */
+/* ==============================>Start Team style <=========================== */
+
+.layer-img{
+  position: absolute;
+  top:4px;
+  left: 5px;
+  bottom: 2px;
+  right: 2px;
+  width: 97.5%;
+  height: 98%;
+  opacity: 0;
+  transform: rotateY(180deg) scale(0.5,0.5);
+
+  transition: all 1s;
+}
+.layer-item{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+}
+.layer-item .icon-port{
+  width:3.125rem;
+  height: 3.125rem;
+}
+.inner-item-team{
+
+  transition: all 0.5s;
+}
+.inner-item-team img{
+  transition: transform 0.5s;
+
+}
+.inner-item-team:hover img{
+  transform: scale(1.1);
+}
+.inner-item-team:hover .layer-img{
+  opacity: 1;
+  transform: rotateY(0deg) scale(1,1);
+}
+.inner-item-team:hover .layer-item{
+  transform: rotateY(0deg);
+  left: 20%;
+}
+/* ==============================>End Team style <=========================== */
+
+/* ==============================>Start  Contact style <=========================== */
+
+.item-contact:hover .icon{
+  background-color:var(--color-text);
+  color: var(--color-bg-secondary);
+}
+.form-control{
+  border: none;
+  background-color: var(--color-bg-form);
+
+}
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--color-bg-form);
+  border:  none   !important;
+  box-shadow: none !important;
+}
+/* ==============================>End  Contact style <=========================== */
+
+
+
+
+
+
+
+
+
+
+
